@@ -1,4 +1,4 @@
-package com.reactnativeviewer;
+package com.record-viewer-native;
 
 import android.app.Application;
 

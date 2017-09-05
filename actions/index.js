@@ -29,9 +29,10 @@ export const fetchRecord = (creds, recordId) => {
   }
 }
 
-export const receiveRecord = (record) => {
+export const receiveRecord = (recordId, record) => {
   return {
     type: 'RECEIVE_RECORD',
+    recordId,
     record,
     receivedAt: Date.now()
   }

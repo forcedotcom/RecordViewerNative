@@ -9,8 +9,8 @@
 
 #import "AppDelegate.h"
 
-#import "RCTBundleURLProvider.h"
-#import "RCTRootView.h"
+#import <React/RCTBundleURLProvider.h>
+#import <React/RCTRootView.h>
 
 @implementation AppDelegate
 
@@ -18,8 +18,8 @@
 {
   NSURL *jsCodeLocation;
 
-//  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
-jsCodeLocation = [NSURL URLWithString:@"http://127.0.0.1:8081/index.ios.bundle?platform=ios&dev=true"];
+  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
+
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"ReactNativeViewer"
                                                initialProperties:nil

@@ -6,7 +6,7 @@ export default function* recordUpdater (action) {
 
   console.log('UPDATING RECORD!')
 
-  let recordDataUrl = action.creds.instanceUrl + '/services/data/v40.0/ui-api/records/' + action.recordId;
+  let recordDataUrl = action.creds.instanceUrl + '/services/data/v41.0/ui-api/records/' + action.recordId;
 
   var recordInput = {};
   recordInput.fields = {};

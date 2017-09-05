@@ -4,7 +4,7 @@ const record = (state = {record: undefined, mode: 'View'}, action) => {
   switch (action.type) {
     case 'RECEIVE_RECORD':
       return {
-        record: recordLayout.getLayoutModel(action.record),
+        record: recordLayout.getLayoutModel(action.recordId, action.record),
         mode: 'View'
       }
     case 'EDIT_RECORD':
