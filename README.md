@@ -1,14 +1,25 @@
-# ReactNativeViewer
-React Native Record Viewer
+# Record Viewer&mdash;React Native
 
-# Setup
-Edit Config.js to set:
-- Salesforce instance endpoint
-- OAuth consumer key
-- OAuth redirect URI (can be fake, not really visited)
+This React Native app shows you how easy it is to use the Salesforce [User Interface API](https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi) to create, read, update, and delete Salesforce records.
 
-# Build
-- Install react-native, watchman, XCode
-- Clone repository
-- Run "npm install"
-- Run "react-native run-ios" (Android build might work but is untested)
+Salesforce uses User Interface API to build the Salesforce1 and Lightning Experience apps. Not only do you get data and metadata in a single response, but the response matches metadata changes made to the org by Salesforce admins. You don’t have to worry about layouts, picklists, field-level security, or sharing&mdash;all you have to do is build an app that users love.
+
+## Set Up the App
+
+The Record Viewer app gets and sets data from a Salesforce organization.
+
+To authenticate Record Viewer with a Salesforce org:
+
+1. In the Salesforce org, [configure a connected app](https://help.salesforce.com/articleView?id=connected_app_overview.htm).
+    * For the Callback URL, enter `https://localhost:8443/oauth-redirect`.
+    * Make a note of the OAuth consumer key to enter in the Record Viewer Config.js file.
+
+1. Clone the RecordViewerNative repository.
+1. Open the Config.js file and set the OAuth consumer key.
+
+## Build the App
+
+1. Install `react-native`, `watchman`, and `XCode`.
+1. From the RecordViewerNative directory:
+    1. Run `npm install`.
+    1. Run `react-native run-ios`. (The Android build might work, but we haven't tested it.)
