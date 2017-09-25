@@ -16,8 +16,8 @@ To authenticate Record Viewer with a Salesforce org:
 
 1. Clone the RecordViewerNative repository.
 1. In the Config.js file:
-   * Set the callback URL to match the value in the connected app. 
-   * Set the OAuth consumer key to match the value in the connected app.
+   * Set `oauthRedirect` to the callback URL in the connected app. 
+   * Set `consumerKey` to the OAuth consumer key in the connected app.
    
 
 ## Build the App
