@@ -21,7 +21,7 @@ To authenticate Record Viewer with a Salesforce org:
 1. In the Salesforce org, visit a few records. The app loads recently used items, and if you don't have any, it won't show any. 
 1. Clone the RecordViewerNative repository.
 1. In the Config.js file:
-   * If you changed the Callback URL in the connected app, set `oauthRedirect` to that value. 
+   * If you entered a Callback URL in the connected app other than `https://`, set `oauthRedirect` to that value. 
    * Set `consumerKey` to the OAuth consumer key in the connected app.
    
 
